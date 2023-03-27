@@ -1,0 +1,52 @@
+.friends {
+    background: #F6F6F6;
+
+    &__wrapper {
+        padding: 80px 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Georgia';
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+
+    }
+    &__slider {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+        row-gap: 30px;
+        margin: 45px 0;
+        padding: 15px 0;
+    }
+    &__card {
+        height: 435px;
+        background: #FAFAFA;
+        border-radius: 9px;
+    }
+    // &__image {}
+    &__text {
+        margin: 30px 0;
+        font-family: 'Georgia';
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+    &__button-group {
+        width: 340px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        width: 187px;
+        height: 52px;
+    }
+    // &__button-paginator {}
+}
