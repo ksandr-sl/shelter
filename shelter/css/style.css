@@ -123,9 +123,12 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 .header__link {
+  padding: 5px 0;
   font-family: "Arial";
   font-size: 15px;
   color: #CDCDCD;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .intro {
@@ -172,6 +175,13 @@ h1, h2, h3, h4, h5, h6 {
 .intro__button {
   width: 207px;
   height: 52px;
+  text-align: center;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-size: 17px;
+  line-height: 52px;
+  letter-spacing: 0.06em;
+  color: #292929;
 }
 
 .about {
@@ -256,9 +266,12 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 60px 0;
   padding: 0 15px;
 }
@@ -282,6 +295,13 @@ h1, h2, h3, h4, h5, h6 {
 .pets__button {
   width: 261px;
   height: 52px;
+  text-align: center;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-size: 17px;
+  line-height: 52px;
+  letter-spacing: 0.06em;
+  color: #292929;
 }
 
 .help {
@@ -354,6 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 30px;
 }
 .donation__title {
   font-family: "Georgia";
@@ -464,6 +485,70 @@ h1, h2, h3, h4, h5, h6 {
   color: #F1CDB3;
 }
 
+.friends {
+  background: #F6F6F6;
+}
+.friends__wrapper {
+  padding: 80px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.friends__title {
+  font-family: "Georgia";
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.friends__slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 30px;
+  margin: 45px 0;
+  padding: 15px 0;
+}
+.friends__card {
+  height: 435px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+.friends__text {
+  margin: 30px 0;
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.friends__button-group {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.friends__button {
+  width: 187px;
+  height: 52px;
+}
+
 body {
   background-color: #E5E5E5;
 }
@@ -477,11 +562,87 @@ button {
   color: #292929;
 }
 
+.button-primary,
+.button-secondary {
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
 .button-primary {
   background: #F1CDB3;
 }
 
 .button-secondary {
-  background: none;
   border: 2px solid #F1CDB3;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  background: #FDDCC4;
+}
+
+.button-secondary:hover {
+  border: none;
+}
+
+.button-paginator {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.06em;
+  color: #292929;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.button-paginator:hover {
+  background: #FDDCC4;
+  border: none;
+}
+
+.button-paginator-inactive {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+}
+
+.button-paginator-active {
+  background: #F1CDB3;
+}
+
+.dark-l {
+  color: #545454;
+}
+
+.dark-3xl {
+  color: #292929;
+}
+
+.light-s {
+  color: #FAFAFA;
+}
+
+.link-active {
+  border-bottom: #F1CDB3 3px solid;
+}
+
+.link-lite:hover {
+  color: #FAFAFA;
+}
+
+.link-dark:hover {
+  color: #292929;
 }

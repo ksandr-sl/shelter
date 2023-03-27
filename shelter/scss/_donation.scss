@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-left: 30px;
     }
     &__title {
         font-family: 'Georgia';
@@ -38,7 +39,7 @@
         background: #F1CDB3;
         border-radius: 9px;
     }
-    &__card-icon {}
+    // &__card-icon {}
     &__card-number {
         font-family: 'Georgia';
         font-size: 20px;

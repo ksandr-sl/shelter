@@ -31,8 +31,10 @@
         justify-content: space-between;
     }
     &__link {
+        padding: 5px 0;
         font-family: 'Arial';
         font-size: 15px;
         color: #CDCDCD;
+        transition: color 0.2s ease;
     }
 }

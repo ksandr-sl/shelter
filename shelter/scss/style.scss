@@ -7,6 +7,7 @@
 @import "help";
 @import "donation";
 @import "footer";
+@import "friends";
 
 body {
     background-color: #E5E5E5;
@@ -22,11 +23,82 @@ button {
     color: #292929;
 }
 
+.button-primary,
+.button-secondary {
+    transition: background 0.2s ease;
+}
+
 .button-primary {
     background: #F1CDB3;
 }
 
 .button-secondary {
-    background: none;
     border: 2px solid #F1CDB3;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    background: #FDDCC4;
+}
+
+.button-secondary:hover {
+    border: none;
+}
+
+.button-paginator {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+
+    color: #292929;
+    transition: background 0.2s ease;
+}
+
+.button-paginator:hover {
+    background: #FDDCC4;
+    border: none;
+}
+
+.button-paginator-inactive {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+
+.button-paginator-active {
+    background: #F1CDB3;
+}
+
+.dark-l {
+    color: #545454;
+}
+
+.dark-3xl {
+    color: #292929;
+}
+
+.light-s {
+    color: #FAFAFA;
+}
+
+.link-active {
+    border-bottom: #F1CDB3 3px solid;
+}
+
+.link-lite:hover {
+    color: #FAFAFA;
+}
+
+.link-dark:hover {
+    color: #292929;
 }
