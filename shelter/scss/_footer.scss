@@ -1,0 +1,46 @@
+.footer {
+    padding: 40px 0 0 0;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contacts {
+        margin-top: 16px;
+        width: 280px;
+        height: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__locations {
+        margin-top: 16px;
+        width: 300px;
+        height: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: 'Georgia';
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    }
+    &__item {
+        display: flex;
+    }
+    &__icon {
+        margin-right: 20px;
+    }
+    &__text {
+        font-family: 'Georgia';
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+    // &__image {}
+}

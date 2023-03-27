@@ -1,0 +1,40 @@
+.help {
+    padding: 80px 0 100px;
+    background: #FFFFFF;
+    text-align: center;
+
+    &__wrapper {
+        width: 80%;
+    }
+    &__title {
+        font-family: 'Georgia';
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 60px;
+
+    }
+    &__list {
+        height: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+    &__item {
+        height: 113px;
+        width: 20%;
+    }
+    &__icon {
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-family: 'Georgia';
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #545454;
+
+    }
+}

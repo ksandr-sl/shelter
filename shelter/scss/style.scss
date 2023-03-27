@@ -1,1 +1,32 @@
-@import "nullstyle.scss";
+@import "nullstyle";
+@import "container";
+@import "header";
+@import "intro";
+@import "about";
+@import "pets";
+@import "help";
+@import "donation";
+@import "footer";
+
+body {
+    background-color: #E5E5E5;
+}
+
+button {
+    border-radius: 100px;
+
+    font-family: 'Georgia';
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.button-primary {
+    background: #F1CDB3;
+}
+
+.button-secondary {
+    background: none;
+    border: 2px solid #F1CDB3;
+}
