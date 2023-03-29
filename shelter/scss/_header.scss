@@ -1,7 +1,9 @@
 .header {
     position: absolute;
     top: 30px;
-    left: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 
     &__wrapper {
         height: 60px;
@@ -37,4 +39,12 @@
         color: #CDCDCD;
         transition: color 0.2s ease;
     }
+}
+
+.header_pets {
+    position: static;
+    height: 120px;
+    padding: 30px 40px;
+    background: #ffffff;
+    transform: translateX(0);
 }

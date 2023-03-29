@@ -72,21 +72,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.container {
-  position: relative;
-  width: 1280px;
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-.container-inner {
-  width: 1200px;
-  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .header {
   position: absolute;
   top: 30px;
-  left: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
 }
 .header__wrapper {
   height: 60px;
@@ -129,6 +128,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #CDCDCD;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+}
+
+.header_pets {
+  position: static;
+  height: 120px;
+  padding: 30px 40px;
+  background: #ffffff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .intro {
@@ -309,9 +317,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   text-align: center;
 }
-.help__wrapper {
-  width: 80%;
-}
 .help__title {
   font-family: "Georgia";
   font-size: 35px;
@@ -353,7 +358,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #F6F6F6;
 }
 .donation__wrapper {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #F6F6F6;
 }
 .friends__wrapper {
-  padding: 80px 0 100px;
+  padding: 80px 40px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
