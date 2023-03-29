@@ -9,14 +9,21 @@
 @import "footer";
 @import "friends";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #E5E5E5;
 }
 
+// buttons ===================================================================================
 button {
     border-radius: 100px;
 
     font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -45,23 +52,16 @@ button {
     border: none;
 }
 
+// button-paginators ==================================================================================
 .button-paginator {
     width: 52px;
     height: 52px;
-    border: 2px solid #F1CDB3;
 
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 115%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.06em;
-
     color: #292929;
+    border: 2px solid #F1CDB3;
     transition: background 0.2s ease;
 }
 
@@ -70,15 +70,17 @@ button {
     border: none;
 }
 
-.button-paginator-inactive {
+.button-paginator_inactive {
     border: 2px solid #CDCDCD;
     color: #CDCDCD;
+    pointer-events: none;
 }
 
-.button-paginator-active {
+.button-paginator_active {
     background: #F1CDB3;
 }
 
+// colors ==================================================================================
 .dark-l {
     color: #545454;
 }

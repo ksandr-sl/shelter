@@ -29,6 +29,11 @@
         height: 435px;
         background: #FAFAFA;
         border-radius: 9px;
+        cursor: pointer;
+        transition: box-shadow 0.2s ease;
+    }
+    &__card:hover {
+        box-shadow: 2px 2px 10px 0px #fedcc4;
     }
     // &__image {}
     &__text {
@@ -48,5 +53,4 @@
         width: 187px;
         height: 52px;
     }
-    // &__button-paginator {}
 }

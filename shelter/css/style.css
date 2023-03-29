@@ -287,6 +287,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 435px;
   border-radius: 9px;
   background: #FAFAFA;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+.pets__slider-item:hover {
+  -webkit-box-shadow: 2px 2px 10px 0px #fedcc4;
+          box-shadow: 2px 2px 10px 0px #fedcc4;
 }
 .pets__slider-text {
   margin: 30px 0;
@@ -408,6 +417,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 43px;
   background: #F1CDB3;
   border-radius: 9px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+.donation__credit-card:hover {
+  background: #FDDCC4;
 }
 .donation__card-number {
   font-family: "Georgia";
@@ -477,6 +491,12 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__item .footer__text:hover {
+  color: #FDDCC4;
 }
 .footer__icon {
   margin-right: 20px;
@@ -487,6 +507,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .friends {
@@ -530,6 +552,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 435px;
   background: #FAFAFA;
   border-radius: 9px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+.friends__card:hover {
+  -webkit-box-shadow: 2px 2px 10px 0px #fedcc4;
+          box-shadow: 2px 2px 10px 0px #fedcc4;
 }
 .friends__text {
   margin: 30px 0;
@@ -553,6 +584,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 52px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #E5E5E5;
 }
@@ -560,6 +595,8 @@ body {
 button {
   border-radius: 100px;
   font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -592,23 +629,10 @@ button {
 .button-paginator {
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CDB3;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 115%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  letter-spacing: 0.06em;
   color: #292929;
+  border: 2px solid #F1CDB3;
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
@@ -618,12 +642,13 @@ button {
   border: none;
 }
 
-.button-paginator-inactive {
+.button-paginator_inactive {
   border: 2px solid #CDCDCD;
   color: #CDCDCD;
+  pointer-events: none;
 }
 
-.button-paginator-active {
+.button-paginator_active {
   background: #F1CDB3;
 }
 
