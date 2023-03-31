@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 .header__menu {
-  width: 450px;
+  width: 443px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 80px;
 }
 .intro__title {
   font-family: "Georgia";
@@ -270,18 +271,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #545454;
 }
 .pets__slider {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 60px 0;
   padding: 0 15px;
+}
+.pets__slider > button:first-child {
+  position: absolute;
+  left: 0;
+}
+.pets__slider > button:last-child {
+  position: absolute;
+  right: 0;
 }
 .pets__slider-item {
   height: 435px;
@@ -300,10 +310,10 @@ h1, h2, h3, h4, h5, h6 {
 .pets__slider-text {
   margin: 30px 0;
   font-family: "Georgia";
-  font-size: 17px;
-  line-height: 130%;
+  font-size: 20px;
+  line-height: 23px;
   letter-spacing: 0.06em;
-  color: #292929;
+  color: #545454;
 }
 .pets__slider-button {
   width: 187px;
@@ -336,20 +346,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 .help__list {
   height: 280px;
+  margin: 0 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.help__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.help__list .help__row:last-child {
+  margin: 0 84px;
 }
 .help__item {
   height: 113px;
-  width: 20%;
 }
 .help__icon {
   margin-bottom: 30px;
@@ -373,6 +394,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .donation__inner {
   width: 380px;
@@ -674,4 +698,4 @@ button {
 
 .link-dark:hover {
   color: #292929;
-}
+}/*# sourceMappingURL=style.css.map */

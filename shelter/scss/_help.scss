@@ -15,14 +15,20 @@
     }
     &__list {
         height: 280px;
+        margin: 0 87px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list &__row:last-child {
+        margin: 0 84px;
     }
     &__item {
         height: 113px;
-        width: 20%;
     }
     &__icon {
         margin-bottom: 30px;
