@@ -14,20 +14,14 @@
     }
     &__list {
         height: 280px;
-        margin: 0 87px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    &__row {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__list &__row:last-child {
-        margin: 0 84px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
     }
     &__item {
         height: 113px;
+        margin: 0 60px;
     }
     &__icon {
         margin-bottom: 30px;
@@ -38,5 +32,24 @@
         letter-spacing: 0.06em;
         color: #545454;
 
+    }
+}
+
+@media (max-width: 768px) {
+    .help {
+        &__wrapper {
+            padding: 0 69px;
+        }
+        &__list {
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 60px;
+            row-gap: 55px;
+        }
+        &__item {
+            width: 170px;
+            margin: 0;
+        }
     }
 }

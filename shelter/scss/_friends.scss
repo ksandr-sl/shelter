@@ -52,3 +52,19 @@
         height: 52px;
     }
 }
+
+@media (max-width: 768px) {
+    .friends {
+        &__wrapper {
+            padding: 80px 30px 76px;
+        }
+        &__slider {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-rows: 0;
+            overflow: hidden;
+            margin: 30px 0 10px;
+            padding: 0;
+        }
+    }
+}

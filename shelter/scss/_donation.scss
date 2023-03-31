@@ -55,3 +55,19 @@
         color: #B2B2B2;
     }
 }
+
+@media (max-width: 768px) {
+    .donation {
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__inner {
+            margin-left: 0;
+        }
+
+        &__image {
+            margin-top: 60px;
+        }
+    }
+}

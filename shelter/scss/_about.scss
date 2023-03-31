@@ -31,3 +31,20 @@
         color: #4C4C4C;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        &__wrapper {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+
+        &__inner {
+            margin-bottom: 80px;
+        }
+
+        &__image {
+            margin-right: 0;
+        }
+    }
+}

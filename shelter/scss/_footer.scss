@@ -47,3 +47,23 @@
     }
     // &__image {}
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0 0 0;
+
+        &__wrapper {
+            flex-wrap: wrap;
+            padding: 0 64px;
+        }
+
+        &__contacts,
+        &__locations {
+            margin: 0 0 65px;
+        }
+
+        &__image {
+            margin: 0 auto;
+        }
+    }
+}

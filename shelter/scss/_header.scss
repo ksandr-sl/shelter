@@ -40,13 +40,48 @@
         font-size: 15px;
         color: #CDCDCD;
         transition: color 0.2s ease;
+
+        &:hover {
+            color: #FAFAFA;
+        }
+    }
+
+    & .link-active_lite {
+        color: #FAFAFA;
+        border-bottom: #F1CDB3 3px solid;
     }
 }
 
-.header_pets {
+.header_lite {
     position: static;
     height: 120px;
     padding: 30px 40px;
     background: #ffffff;
     transform: translateX(0);
+
+    & .header__title {
+        color: #545454;
+    }
+    & .header__subtitle {
+        color: #292929;
+    }
+    & .header__link {
+        color: #545454;
+
+        &:hover {
+            color: #292929;
+        }
+    }
+    & .link-active_dark {
+        color: #292929;
+        border-bottom: #F1CDB3 3px solid;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header_lite {
+        padding: 30px 0;
+    }
 }

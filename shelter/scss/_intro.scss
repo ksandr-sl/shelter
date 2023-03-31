@@ -36,5 +36,29 @@
         letter-spacing: 0.06em;
         color: #292929;
     }
-    // &__image {}
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 150px 0 0 0;
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__button {
+            align-self: center;
+        }
+
+        &__inner {
+            margin-bottom: 100px;
+        }
+
+        &__image {
+            width: 569px;
+            height: 593px;
+            margin-right: -140px;
+        }
+    }
 }
