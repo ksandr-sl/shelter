@@ -9,20 +9,18 @@
     }
     &__inner {
         width: 460px;
-        min-height: 330px;
+        min-height: 322px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 80px;
     }
     &__title {
-        font-family: 'Georgia';
         font-size: 44px;
         line-height: 130%;
         color: #FFFFFF;
     }
     &__text {
-        font-family: 'Arial';
         font-size: 15px;
         line-height: 160%;
         color: #CDCDCD;
@@ -33,7 +31,6 @@
         text-align: center;
         border-radius: 100px;
 
-        font-family: 'Georgia';
         font-size: 17px;
         line-height: 52px;
         letter-spacing: 0.06em;

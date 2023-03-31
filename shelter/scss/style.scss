@@ -1,5 +1,7 @@
 @import "nullstyle";
+@import "base";
 @import "wrapper";
+@import "buttons";
 @import "header";
 @import "intro";
 @import "about";
@@ -9,76 +11,6 @@
 @import "footer";
 @import "friends";
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #E5E5E5;
-}
-
-// buttons ===================================================================================
-button {
-    border-radius: 100px;
-
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #292929;
-}
-
-.button-primary,
-.button-secondary {
-    transition: background 0.2s ease;
-}
-
-.button-primary {
-    background: #F1CDB3;
-}
-
-.button-secondary {
-    border: 2px solid #F1CDB3;
-}
-
-.button-primary:hover,
-.button-secondary:hover {
-    background: #FDDCC4;
-}
-
-.button-secondary:hover {
-    border: none;
-}
-
-// button-paginators ==================================================================================
-.button-paginator {
-    width: 52px;
-    height: 52px;
-
-    font-size: 20px;
-    line-height: 115%;
-
-    color: #292929;
-    border: 2px solid #F1CDB3;
-    transition: background 0.2s ease;
-}
-
-.button-paginator:hover {
-    background: #FDDCC4;
-    border: none;
-}
-
-.button-paginator_inactive {
-    border: 2px solid #CDCDCD;
-    color: #CDCDCD;
-    pointer-events: none;
-}
-
-.button-paginator_active {
-    background: #F1CDB3;
-}
 
 // colors ==================================================================================
 .dark-l {

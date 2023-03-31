@@ -11,19 +11,22 @@
         justify-content: space-between;
         align-items: center;
     }
-    // &__logo {}
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__title {
-        font-family: 'Georgia';
         font-size: 32px;
-        // line-height: 110%;
+        line-height: 110%;
         letter-spacing: 0.06em;
         color: #F1CDB3;
     }
     &__subtitle {
         margin-top: 10px;
-        font-family: 'Arial';
         font-size: 13px;
-        // line-height: 15px;
+        line-height: 15px;
         letter-spacing: 0.1em;
         color: #FFFFFF;
     }
@@ -34,7 +37,6 @@
     }
     &__link {
         padding: 5px 0;
-        font-family: 'Arial';
         font-size: 15px;
         color: #CDCDCD;
         transition: color 0.2s ease;

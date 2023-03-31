@@ -1,0 +1,59 @@
+button {
+    border-radius: 100px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.button-primary,
+.button-secondary {
+    transition: background 0.2s ease;
+
+    &:hover {
+    background: #FDDCC4;
+    }
+}
+
+.button-primary {
+    background: #F1CDB3;
+}
+
+.button-secondary {
+    border: 2px solid #F1CDB3;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.button-paginator {
+    width: 52px;
+    height: 52px;
+
+    font-size: 20px;
+    line-height: 115%;
+
+    color: #292929;
+    border: 2px solid #F1CDB3;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: #FDDCC4;
+        border: none;
+    }
+
+    &_active {
+        background: #F1CDB3;
+    }
+
+    &_inactive {
+        border: 2px solid #CDCDCD;
+        color: #CDCDCD;
+        pointer-events: none;
+    }
+}

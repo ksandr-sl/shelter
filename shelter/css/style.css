@@ -72,11 +72,86 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+}
+
+a, p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+button {
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.button-primary,
+.button-secondary {
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+.button-primary:hover,
+.button-secondary:hover {
+  background: #FDDCC4;
+}
+
+.button-primary {
+  background: #F1CDB3;
+}
+
+.button-secondary {
+  border: 2px solid #F1CDB3;
+}
+.button-secondary:hover {
+  border: none;
+}
+
+.button-paginator {
+  width: 52px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 115%;
+  color: #292929;
+  border: 2px solid #F1CDB3;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+.button-paginator:hover {
+  background: #FDDCC4;
+  border: none;
+}
+.button-paginator_active {
+  background: #F1CDB3;
+}
+.button-paginator_inactive {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
 }
 
 .header {
@@ -99,16 +174,31 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .header__title {
-  font-family: "Georgia";
   font-size: 32px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
 }
 .header__subtitle {
   margin-top: 10px;
-  font-family: "Arial";
   font-size: 13px;
+  line-height: 15px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
 }
@@ -123,7 +213,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__link {
   padding: 5px 0;
-  font-family: "Arial";
   font-size: 15px;
   color: #CDCDCD;
   -webkit-transition: color 0.2s ease;
@@ -156,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .intro__inner {
   width: 460px;
-  min-height: 330px;
+  min-height: 322px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,13 +259,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 80px;
 }
 .intro__title {
-  font-family: "Georgia";
   font-size: 44px;
   line-height: 130%;
   color: #FFFFFF;
 }
 .intro__text {
-  font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
   color: #CDCDCD;
@@ -186,7 +273,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 52px;
   text-align: center;
   border-radius: 100px;
-  font-family: "Georgia";
   font-size: 17px;
   line-height: 52px;
   letter-spacing: 0.06em;
@@ -227,14 +313,12 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 .about__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #545454;
 }
 .about__text {
-  font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
   color: #4C4C4C;
@@ -264,7 +348,6 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 .pets__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -309,7 +392,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pets__slider-text {
   margin: 30px 0;
-  font-family: "Georgia";
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
@@ -324,7 +406,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 52px;
   text-align: center;
   border-radius: 100px;
-  font-family: "Georgia";
   font-size: 17px;
   line-height: 52px;
   letter-spacing: 0.06em;
@@ -337,7 +418,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .help__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -376,7 +456,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 .help__text {
-  font-family: "Georgia";
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -414,14 +493,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 30px;
 }
 .donation__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #545454;
 }
 .donation__subtitle {
-  font-family: "Georgia";
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -448,14 +525,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #FDDCC4;
 }
 .donation__card-number {
-  font-family: "Georgia";
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
 }
 .donation__info {
-  font-family: "Arial";
   font-style: italic;
   font-size: 12px;
   line-height: 18px;
@@ -505,7 +580,6 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 .footer__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -526,7 +600,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 20px;
 }
 .footer__text {
-  font-family: "Georgia";
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -556,7 +629,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .friends__title {
-  font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -588,7 +660,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .friends__text {
   margin: 30px 0;
-  font-family: "Georgia";
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
@@ -606,74 +677,6 @@ h1, h2, h3, h4, h5, h6 {
 .friends__button {
   width: 187px;
   height: 52px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #E5E5E5;
-}
-
-button {
-  border-radius: 100px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
-}
-
-.button-primary,
-.button-secondary {
-  -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
-}
-
-.button-primary {
-  background: #F1CDB3;
-}
-
-.button-secondary {
-  border: 2px solid #F1CDB3;
-}
-
-.button-primary:hover,
-.button-secondary:hover {
-  background: #FDDCC4;
-}
-
-.button-secondary:hover {
-  border: none;
-}
-
-.button-paginator {
-  width: 52px;
-  height: 52px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #292929;
-  border: 2px solid #F1CDB3;
-  -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
-}
-
-.button-paginator:hover {
-  background: #FDDCC4;
-  border: none;
-}
-
-.button-paginator_inactive {
-  border: 2px solid #CDCDCD;
-  color: #CDCDCD;
-  pointer-events: none;
-}
-
-.button-paginator_active {
-  background: #F1CDB3;
 }
 
 .dark-l {
