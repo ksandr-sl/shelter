@@ -7,10 +7,12 @@
         justify-content: center;
         align-items: center;
     }
-    // &__image {}
+    &__image {
+        max-width: 505px;
+        height: auto;
+    }
     &__inner {
-        width: 380px;
-        height: 280px;
+        max-width: 380px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -23,6 +25,7 @@
         color: #545454;
     }
     &__subtitle {
+        margin: 20px 0;
         font-size: 15px;
         line-height: 110%;
         letter-spacing: 0.06em;
@@ -32,8 +35,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 349px;
+        max-width: 349px;
         height: 43px;
+        margin-bottom: 20px;
         background: #F1CDB3;
         border-radius: 9px;
         transition: background 0.2s ease;
@@ -68,6 +72,40 @@
 
         &__image {
             margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .donation {
+        padding: 42px 0;
+
+        &__inner {
+            text-align: center;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__image {
+            margin-top: 42px;
+            max-width: 260px;
+            height: auto;
+        }
+        &__subtitle {
+            line-height: 160%;
+        }
+        &__credit-card {
+            margin: 0 10px 20px;
+            padding: 10px 15px;
+            justify-content: space-between;
+        }
+        &__card-number {
+            font-size: 15px;
+            line-height: 110%;
+        }
+        &__info {
+            text-align: justify;
+            margin: 0 10px;
         }
     }
 }

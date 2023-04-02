@@ -12,9 +12,8 @@
         margin-right: 120px;
     }
     &__inner {
-        width: 430px;
-        height: 380px;
-
+        max-width: 430px;
+        min-height: 380px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -45,6 +44,29 @@
 
         &__image {
             margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding: 42px 0;
+        text-align: center;
+
+        &__inner {
+            padding: 0 15px;
+            margin-bottom: 42px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__text {
+            margin-top: 22px;
+            text-align: justify;
+        }
+        &__image {
+            max-width: 260px;
+            height: auto;
         }
     }
 }

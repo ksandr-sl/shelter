@@ -21,6 +21,7 @@
         position: relative;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         margin: 60px 0;
@@ -74,9 +75,32 @@
         &__slider {
             padding: 0 24px;
         }
-
         &__slider-item:last-of-type {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .pets {
+        padding: 42px 0;
+
+        &__title {
+            font-size: 25px;
+        }
+        &__slider {
+            margin: 42px 0 114px;
+        }
+        &__slider-item:nth-last-of-type(-n+2) {
+            display: none;
+        }
+        &__slider > button:first-child {
+            left: 58px;
+            bottom: -72px;
+        }
+        &__slider > button:last-child {
+            right: 58px;
+            bottom: -72px;
         }
     }
 }

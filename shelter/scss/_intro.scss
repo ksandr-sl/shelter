@@ -9,7 +9,6 @@
     }
     &__inner {
         width: 460px;
-        min-height: 322px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -24,6 +23,7 @@
         font-size: 15px;
         line-height: 160%;
         color: #CDCDCD;
+        margin: 42px 0;
     }
     &__button {
         width: 207px;
@@ -56,9 +56,32 @@
         }
 
         &__image {
-            width: 569px;
-            height: 593px;
-            margin-right: -140px;
+            max-width: 569px;
+            height: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        text-align: center;
+
+        &__inner {
+            margin-bottom: 105px;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+        &__text {
+            align-items: center;
+        }
+        &__image {
+            max-width: 260px;
+            height: auto;
         }
     }
 }
