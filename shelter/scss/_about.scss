@@ -5,11 +5,15 @@
     &__wrapper {
         height: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
     &__image {
         margin-right: 120px;
+    }
+    &__image img {
+        width: 100%;
     }
     &__inner {
         max-width: 430px;
@@ -31,7 +35,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     .about {
         &__wrapper {
             flex-direction: column-reverse;
