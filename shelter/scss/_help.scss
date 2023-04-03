@@ -3,11 +3,8 @@
     background: #FFFFFF;
     text-align: center;
 
-    &__wrapper {
-        width: 80%;
-    }
+    // &__wrapper {}
     &__title {
-        font-family: 'Georgia';
         font-size: 35px;
         line-height: 130%;
         letter-spacing: 0.06em;
@@ -19,22 +16,95 @@
         height: 280px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-content: space-between;
+        justify-content: center;
+        overflow: hidden;
     }
     &__item {
         height: 113px;
-        width: 20%;
+        margin: 0 60px 55px;
     }
     &__icon {
+        max-width: 60px;
+        max-height: 60px;
         margin-bottom: 30px;
     }
     &__text {
-        font-family: 'Georgia';
         font-size: 20px;
         line-height: 115%;
         letter-spacing: 0.06em;
         color: #545454;
 
+    }
+}
+
+@media (max-width: 800px) {
+    .help {
+        &__wrapper {
+            padding: 0 69px;
+        }
+        &__list {
+            height: auto;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            column-gap: 60px;
+            row-gap: 55px;
+        }
+        &__item {
+            width: 170px;
+            height: 113px;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .help {
+        &__list {
+            gap: 30px;
+        }
+        &__item {
+            width: 130px;
+            height: 87px;
+
+        }
+        &__icon {
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .help {
+        &__wrapper {
+            padding: 0 30px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .help {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
+}
+@media (max-width: 320px) {
+    .help {
+        padding: 42px 0;
+
+        &__wrapper {
+            padding: 0 15px;
+        }
+        &__title {
+            font-size: 25px;
+            margin-bottom: 42px;
+        }
     }
 }

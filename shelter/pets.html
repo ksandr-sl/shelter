@@ -5,117 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy House</title>
+    <link rel="icon" href="img/footer-puppy.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="container">
 
-        <!-- header -->
-        <header class="header" style="position: static; height: 120px; padding: 30px 40px; background: #ffffff;">
-            <div class="header__wrapper container-inner">
-                <a href="index.html" class="header__logo">
-                    <h1 class="header__title dark-l">Cozy House</h1>
-                    <p class="header__subtitle dark-3xl">Shelter for pets in Boston</p>
+    <!-- header -->
+    <header class="header header_lite">
+        <div class="header__wrapper wrapper">
+            <a href="index.html" class="header__logo">
+                <h1 class="header__title">Cozy House</h1>
+                <p class="header__subtitle">Shelter for pets in Boston</p>
+            </a>
+
+            <nav class="menu menu_lite">
+                <a href="index.html" class="menu__link">About the shelter</a>
+                <a href="pets.html" class="menu__link link-active_dark">Our pets</a>
+                <a href="#help" class="menu__link">Help the shelter</a>
+                <a href="#footer" class="menu__link">Contacts</a>
+            </nav>
+
+            <button class="burger burger__lite" type="button">
+                <span class="burger__item">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- friends -->
+    <main class="friends">
+        <div class="friends__wrapper wrapper">
+            <h3 class="friends__title">Our friends who<br>are looking for a house</h3>
+            <div class="friends__slider">
+                <div class="friends__card">
+                    <img src="img/pets-katrine.png" alt="" class="friends__image">
+                    <p class="friends__text">Katrine</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-jennifer.png" alt="" class="friends__image">
+                    <p class="friends__text">Jennifer</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-woody.png" alt="" class="friends__image">
+                    <p class="friends__text">Woody</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-sophia.png" alt="" class="friends__image">
+                    <p class="friends__text">Sophia</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-timmy.png" alt="" class="friends__image">
+                    <p class="friends__text">Timmy</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-charly.png" alt="" class="friends__image">
+                    <p class="friends__text">Charly</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-scarlet.png" alt="" class="friends__image">
+                    <p class="friends__text">Scarlett</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+                <div class="friends__card">
+                    <img src="img/pets-freddie.png" alt="" class="friends__image">
+                    <p class="friends__text">Freddie</p>
+                    <button class="friends__button button-secondary">Learn more</button>
+                </div>
+            </div>
+            <nav class="friends__button-group">
+                <button class="button-paginator button-paginator_inactive">&#60;&#60;</button>
+                <button class="button-paginator button-paginator_inactive">&#60;</button>
+                <button class="button-paginator button-paginator_active">1</button>
+                <button class="button-paginator">&#62;</button>
+                <button class="button-paginator">&#62;&#62;</button>
+            </nav>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__contacts">
+                <h3 class="footer__title">For questions and suggestions</h3>
+                <a href="mailto:google.com" target="_blank" class="footer__item">
+                    <img src="img/svg/icon-email.svg" alt="email" class="footer__icon">
+                    <h4 class="footer__text">email@shelter.com</h4>
                 </a>
-    
-                <nav class="header__menu">
-                    <a href="index.html" class="header__link dark-l link-dark">About the shelter</a>
-                    <a href="#" class="header__link dark-3xl link-active">Our pets</a>
-                    <a href="index.html#help" class="header__link dark-l link-dark">Help the shelter</a>
-                    <a href="#contacts" class="header__link dark-l link-dark">Contacts</a>
-                </nav>
+                <a href="tel:+136745677554;" class="footer__item">
+                    <img src="img/svg/icon-phone.svg" alt="phone" class="footer__icon">
+                    <h4 class="footer__text">+13 674 567 75 54</h4>
+                </a>
             </div>
-        </header>
 
-        <!-- friends -->
-        <main class="friends">
-            <div class="friends__wrapper container-inner">
-                <h3 class="friends__title">Our friends who<br>are looking for a house</h3>
-                <div class="friends__slider">
-                    <div class="friends__card">
-                        <img src="img/pets-katrine.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Katrine</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-jennifer.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Jennifer</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-woody.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Woody</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-sophia.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Sophia</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-timmy.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Timmy</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-charly.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Charly</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-scarlet.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Scarlett</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                    <div class="friends__card">
-                        <img src="img/pets-freddie.png" width="270" height="270" alt="" class="friends__image">
-                        <p class="friends__text">Freddie</p>
-                        <button class="friends__button button-secondary">Learn more</button>
-                    </div>
-                </div>
-                <nav class="friends__button-group">
-                    <button class="friends__button-paginator button-paginator button-paginator-inactive" disabled>&#60;&#60;</button>
-                    <button class="friends__button-paginator button-paginator button-paginator-inactive" disabled>&#60;</button>
-                    <button class="friends__button-paginator button-paginator button-paginator-active">1</button>
-                    <button class="friends__button-paginator button-paginator">&#62;</button>
-                    <button class="friends__button-paginator button-paginator">&#62;&#62;</button>
-                </nav>
+            <div class="footer__locations">
+                <h3 class="footer__title">We are waiting for your visit</h3>
+                <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,90y,288.14h,67.46t/data=!3m7!1e1!3m5!1sgT28ssf0BB2LxZ63JNcL1w!2e0!3e5!7i13312!8i6656" target="_blank" class="footer__item">
+                    <img src="img/svg/icon-marker.svg" alt="marker" class="footer__icon">
+                    <h4 class="footer__text">1 Central Street, Boston (entrance from the store)</h4>
+                </a>
+                <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,90y,288.14h,67.46t/data=!3m7!1e1!3m5!1sgT28ssf0BB2LxZ63JNcL1w!2e0!3e5!7i13312!8i6656" target="_blank" class="footer__item">
+                    <img src="img/svg/icon-marker.svg" alt="marker" class="footer__icon">
+                    <h4 class="footer__text">18 South Park, London</h4>
+                </a>
             </div>
-        </main>
 
-        <!-- footer -->
-        <footer id="contacts" class="footer">
-            <div class="footer__wrapper container-inner">
-                <div class="footer__contacts">
-                    <h3 class="footer__title">For questions and suggestions</h3>
-                    <a href="https://mail.google.com/" target="_blank" class="footer__item">
-                        <img src="img/svg/icon-email.svg" alt="email" class="footer__icon">
-                        <p class="footer__text">email@shelter.com</p>
-                    </a>
-                    <a href="tel:+136745677554;" class="footer__item">
-                        <img src="img/svg/icon-phone.svg" alt="phone" class="footer__icon">
-                        <p class="footer__text">+13 674 567 75 54</p>
-                    </a>
-                </div>
-
-                <div class="footer__locations">
-                    <h3 class="footer__title">We are waiting for your visit</h3>
-                    <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,90y,288.14h,67.46t/data=!3m7!1e1!3m5!1sgT28ssf0BB2LxZ63JNcL1w!2e0!3e5!7i13312!8i6656" target="_blank" class="footer__item">
-                        <img src="img/svg/icon-marker.svg" alt="marker" class="footer__icon">
-                        <p class="footer__text">1 Central Street, Boston (entrance from the store)</p>
-                    </a>
-                    <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,90y,288.14h,67.46t/data=!3m7!1e1!3m5!1sgT28ssf0BB2LxZ63JNcL1w!2e0!3e5!7i13312!8i6656" target="_blank" class="footer__item">
-                        <img src="img/svg/icon-marker.svg" alt="marker" class="footer__icon">
-                        <p class="footer__text">18 South Park, London</p>
-                    </a>
-                </div>
-
-                <img src="img/footer-puppy.png" alt="puppy" class="footer__image">
-            </div>
-        </footer>
-
-    </div>
+            <img src="img/footer-puppy.png" alt="puppy" class="footer__image">
+        </div>
+    </footer>
 
 </body>
 </html>

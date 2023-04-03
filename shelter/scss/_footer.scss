@@ -4,26 +4,25 @@
 
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__contacts,
+    &__locations {
+        height: 234px;
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
     &__contacts {
-        margin-top: 16px;
         width: 280px;
-        height: 235px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     &__locations {
-        margin-top: 16px;
-        width: 300px;
-        height: 235px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 302px;
     }
     &__title {
-        font-family: 'Georgia';
         font-size: 35px;
         line-height: 130%;
         letter-spacing: 0.06em;
@@ -31,16 +30,83 @@
     }
     &__item {
         display: flex;
+        align-items: center;
+    }
+    &__item &__text:hover {
+        color: #FDDCC4;
     }
     &__icon {
         margin-right: 20px;
     }
     &__text {
-        font-family: 'Georgia';
         font-size: 20px;
         line-height: 115%;
         letter-spacing: 0.06em;
         color: #F1CDB3;
+        transition: color 0.2s ease;
     }
-    // &__image {}
+    &__image {
+        max-width: 300px;
+    }
+    &__image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+        &__contacts,
+        &__locations {
+            margin: 5px 0 65px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0 0 0;
+
+        &__wrapper {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        text-align: center;
+
+        &__wrapper {
+            padding: 0 10px;
+        }
+        &__contacts,
+        &__locations {
+            align-items: center;
+            margin: 0 0 40px;
+            max-width: 100%;
+        }
+        &__contacts {
+            height: 208px;
+        }
+        &__locations {
+            height: 222px;
+            padding: 0 15px;
+
+            & .footer__item {
+                margin: 40px -15px 0;
+                align-self: flex-start;
+                text-align: start;
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__image {
+            max-width: 260px;
+        }
+    }
 }

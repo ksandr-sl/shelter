@@ -4,27 +4,35 @@
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
     }
     &__inner {
         width: 460px;
-        min-height: 330px;
+        margin-right: 42px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 80px;
     }
     &__title {
-        font-family: 'Georgia';
         font-size: 44px;
         line-height: 130%;
         color: #FFFFFF;
     }
     &__text {
-        font-family: 'Arial';
         font-size: 15px;
         line-height: 160%;
         color: #CDCDCD;
+        margin: 42px 0;
+    }
+    &__image {
+        max-width: 698px;
+        height: auto;
+    }
+    &__image img {
+        width: 100%;
     }
     &__button {
         width: 207px;
@@ -32,11 +40,56 @@
         text-align: center;
         border-radius: 100px;
 
-        font-family: 'Georgia';
         font-size: 17px;
         line-height: 52px;
         letter-spacing: 0.06em;
         color: #292929;
     }
-    // &__image {}
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 150px 0 0 0;
+
+        &__wrapper {
+            justify-content: center;
+        }
+
+        &__button {
+            align-self: center;
+        }
+
+        &__inner {
+            margin: 0 auto 100px;
+        }
+
+        &__image {
+            max-width: 569px;
+            height: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        text-align: center;
+
+        &__inner {
+            margin-bottom: 105px;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+        &__text {
+            align-items: center;
+        }
+        &__image {
+            max-width: 260px;
+            height: auto;
+        }
+    }
 }
