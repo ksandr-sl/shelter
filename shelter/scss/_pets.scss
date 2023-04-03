@@ -49,6 +49,7 @@
     // &__slider-image {}
     &__slider-text {
         margin: 30px 0;
+        font-family: 'Georgia';
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 0.06em;
@@ -82,10 +83,10 @@
             width: 100%;
             margin-bottom: 20px;
         }
-    }
-    .button-paginator {
-        order: 2;
-        margin: 0 20px;
+        .button-paginator {
+            order: 2;
+            margin: 0 20px;
+        }
     }
 }
 

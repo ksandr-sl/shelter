@@ -12,6 +12,9 @@ button {
 
 .button-primary,
 .button-secondary {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
     transition: background 0.2s ease;
 
     &:hover {
