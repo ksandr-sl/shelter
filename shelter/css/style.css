@@ -219,7 +219,7 @@ button {
 .header_lite {
   position: static;
   height: 120px;
-  padding: 30px 40px;
+  padding: 30px 0;
   background: #ffffff;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -231,11 +231,6 @@ button {
   color: #292929;
 }
 
-@media (max-width: 800px) {
-  .header_lite {
-    padding: 30px 0;
-  }
-}
 @media (max-width: 320px) {
   .header__wrapper {
     padding: 0 20px;

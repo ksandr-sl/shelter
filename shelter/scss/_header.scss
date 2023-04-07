@@ -35,7 +35,7 @@
 .header_lite {
     position: static;
     height: 120px;
-    padding: 30px 40px;
+    padding: 30px 0;
     background: #ffffff;
     transform: translateX(0);
 
@@ -44,12 +44,6 @@
     }
     & .header__subtitle {
         color: #292929;
-    }
-}
-
-@media (max-width: 800px) {
-    .header_lite {
-        padding: 30px 0;
     }
 }
 
