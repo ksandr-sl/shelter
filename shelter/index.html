@@ -63,28 +63,30 @@
     <section id="pets" class="pets">
         <div class="pets__wrapper wrapper">
             <h3 class="pets__title">Our friends who<br>are looking for a house</h3>
-            <div class="pets__slider">
-                <button class="button-paginator">←</button>
+            <div id="slider" class="pets__slider">
+                <button id="prev" class="button-paginator">←</button>
 
-                <div class="pets__slider-content">
-                    <div class="pets__slider-item">
-                        <img src="img/pets-katrine.png" alt="" class="pets__slider-image">
-                        <p class="pets__slider-text">Katrine</p>
-                        <button class="pets__slider-button button-secondary">Learn more</button>
-                    </div>
-                    <div class="pets__slider-item">
-                        <img src="img/pets-jennifer.png" alt="" class="pets__slider-image">
-                        <p class="pets__slider-text">Jennifer</p>
-                        <button class="pets__slider-button button-secondary">Learn more</button>
-                    </div>
-                    <div class="pets__slider-item">
-                        <img src="img/pets-woody.png" alt="" class="pets__slider-image">
-                        <p class="pets__slider-text">Woody</p>
-                        <button class="pets__slider-button button-secondary">Learn more</button>
+                <div class="pets__slider-wrapper">
+                    <div id="slides" class="pets__slider-content">
+                        <div class="pets__slider-item">
+                            <img src="img/pets-katrine.png" alt="" class="pets__slider-image">
+                            <p class="pets__slider-text">Katrine</p>
+                            <button class="pets__slider-button button-secondary">Learn more</button>
+                        </div>
+                        <div class="pets__slider-item">
+                            <img src="img/pets-jennifer.png" alt="" class="pets__slider-image">
+                            <p class="pets__slider-text">Jennifer</p>
+                            <button class="pets__slider-button button-secondary">Learn more</button>
+                        </div>
+                        <div class="pets__slider-item">
+                            <img src="img/pets-woody.png" alt="" class="pets__slider-image">
+                            <p class="pets__slider-text">Woody</p>
+                            <button class="pets__slider-button button-secondary">Learn more</button>
+                        </div>
                     </div>
                 </div>
 
-                <button class="button-paginator">→</button>
+                <button id="next" class="button-paginator">→</button>
             </div>
             <a href="pets.html" class="pets__button button-primary">Get to know the rest</a>
         </div>
@@ -190,6 +192,6 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
