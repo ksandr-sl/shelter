@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- header -->
     <header class="header">
         <div class="header__wrapper wrapper">
+
             <a href="#" class="header__logo">
                 <h1 class="header__title">Cozy House</h1>
                 <p class="header__subtitle">Shelter for pets in Boston</p>
@@ -25,9 +25,23 @@
                 <a href="#footer" class="menu__link">Contacts</a>
             </nav>
 
-            <button class="burger" type="button">
-                <span class="burger__item">menu</span>
-            </button>
+            <div id="blackout" class="blackout"></div>
+
+            <div id="burger" class="burger">
+                <button id="burger__button" class="burger__button" type="button">
+                    <span class="burger__item">menu</span>
+                </button>
+
+                <div id="burger__menu" class="burger__menu">
+                    <div class="burger__wrapper">
+                        <a href="#" class="menu__link link-active_lite">About the shelter</a>
+                        <a href="pets.html" class="menu__link">Our pets</a>
+                        <a href="#help" class="menu__link">Help the shelter</a>
+                        <a href="#footer" class="menu__link">Contacts</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -191,7 +205,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/index.js"></script>
+    <script src="js/pets.js"></script>
     <script src="js/carousel.js"></script>
 </body>
 </html>

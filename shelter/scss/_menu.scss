@@ -5,6 +5,7 @@
 
     &__link {
         padding: 5px 0;
+        width: fit-content;
         font-size: 15px;
         color: #CDCDCD;
         transition: color 0.2s ease;
@@ -35,6 +36,85 @@
 
 .burger {
     display: none;
+    &__button {
+        z-index: 2;
+        position: relative;
+        display: none;
+        width: 30px;
+        height: 22px;
+        z-index: 1;
+        transition: transform 0.5s ease;
+        &._open {
+            transform: rotate(-90deg);
+        }
+        &._lite {
+            .burger__item,
+            .burger__item::before,
+            .burger__item::after {
+                background-color: #000000;
+            }
+        }
+    }
+    &_lite {
+        & .burger__menu {
+            top: 0;
+        }
+    }
+    &__item {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        color: transparent;
+        font-size: 0;
+        background-color: #F1CDB3;
+    }
+    &__item::before,
+    &__item::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #F1CDB3;
+    }
+    &__item::before {
+        top: -10px;
+    }
+    &__item::after {
+        bottom: -10px;
+    }
+    &__menu {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        width: 320px;
+        height: 100vh;
+        padding: 0 38px;
+        display: none;
+        opacity: 0;
+        background-color: #292929;
+        transform: translateX(320px);
+        transition: all 0.5s ease;
+        &._show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    &__wrapper {
+        width: 243px;
+        height: 327px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .link-active_lite {
+        color: #FAFAFA;
+        border-bottom: #F1CDB3 3px solid;
+    }
 }
 
 @media (max-width: 767px) {
@@ -43,39 +123,9 @@
     }
     .burger {
         display: block;
-        width: 30px;
-        height: 22px;
 
-        &__lite {
-            .burger__item,
-            .burger__item::before,
-            .burger__item::after {
-                background-color: #000000;
-            }
-        }
-        &__item {
-            position: relative;
+        &__button {
             display: block;
-            width: 30px;
-            height: 2px;
-            color: transparent;
-            font-size: 0;
-            background-color: #F1CDB3;
-        }
-        &__item::before,
-        &__item::after {
-            position: absolute;
-            display: block;
-            content: "";
-            width: 100%;
-            height: 100%;
-            background-color: #F1CDB3;
-        }
-        &__item::before {
-            top: -10px;
-        }
-        &__item::after {
-            bottom: -10px;
         }
     }
 }

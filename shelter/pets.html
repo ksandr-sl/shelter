@@ -20,14 +20,28 @@
 
             <nav class="menu menu_lite">
                 <a href="index.html" class="menu__link">About the shelter</a>
-                <a href="pets.html" class="menu__link link-active_dark">Our pets</a>
+                <a href="#" class="menu__link link-active_dark">Our pets</a>
                 <a href="#help" class="menu__link">Help the shelter</a>
                 <a href="#footer" class="menu__link">Contacts</a>
             </nav>
 
-            <button class="burger burger__lite" type="button">
-                <span class="burger__item">menu</span>
-            </button>
+            <div id="blackout" class="blackout"></div>
+
+            <div id="burger" class="burger burger_lite">
+                <button id="burger__button" class="burger__button _lite" type="button">
+                    <span class="burger__item">menu</span>
+                </button>
+
+                <div id="burger__menu" class="burger__menu">
+                    <div class="burger__wrapper">
+                        <a href="index.html" class="menu__link">About the shelter</a>
+                        <a href="#" class="menu__link link-active_lite">Our pets</a>
+                        <a href="#help" class="menu__link">Help the shelter</a>
+                        <a href="#footer" class="menu__link">Contacts</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -118,5 +132,7 @@
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
+    <script src="js/pets.js"></script>
 </body>
 </html>
