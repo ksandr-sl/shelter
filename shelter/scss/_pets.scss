@@ -1,4 +1,5 @@
 .pets {
+    position: relative;
     padding: 80px 0 100px;
     display: flex;
     align-items: center;
@@ -77,6 +78,120 @@
     }
 }
 
+.popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1000vh;
+    overflow: hidden;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    opacity: 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    transition: opacity 0.5s ease;
+    &._visible {
+        opacity: 1;
+    }
+
+    &__wrapper {
+        position: fixed;
+        width: 900px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fafafa;
+        border-radius: 9px;
+        display: flex;
+    }
+    &__image {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 9px;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__info {
+        max-width: 350px;
+        padding: 50px 20px 88px 30px;
+        text-align: start;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+    &__text {
+        margin: 40px 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+    &__list {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        & li {
+            margin-bottom: 10px;
+        }
+        & span {
+            font-weight: 400;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: -52px;
+        right: -52px;
+        width: 52px;
+        height: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popup {
+        &__wrapper {
+            width: 682px;
+            height: 402px;
+        }
+        &__image {
+            width: 350px;
+        }
+        &__text {
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        &__list {
+            & li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .pets {
         &__slider {
@@ -101,6 +216,22 @@
 
         &__title {
             font-size: 25px;
+        }
+    }
+    .popup {
+        &__wrapper {
+            width: 240px;
+            height: 341px;
+        }
+        &__image {
+            display: none;
+        }
+        &__info {
+            padding: 10px;
+            text-align: center;
+        }
+        &__list {
+            text-align: start;
         }
     }
 }

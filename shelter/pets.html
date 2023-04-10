@@ -25,14 +25,12 @@
                 <a href="#footer" class="menu__link">Contacts</a>
             </nav>
 
-            <div id="blackout" class="blackout"></div>
-
             <div id="burger" class="burger burger_lite">
                 <button id="burger__button" class="burger__button _lite" type="button">
                     <span class="burger__item">menu</span>
                 </button>
 
-                <div class="burger__wrapper">
+                <div id="burger__wrapper" class="burger__wrapper">
                     <div id="burger__menu" class="burger__menu">
                         <a href="index.html" class="menu__link">About the shelter</a>
                         <a href="#" class="menu__link link-active_lite">Our pets</a>
@@ -49,7 +47,7 @@
     <main class="friends">
         <div class="friends__wrapper wrapper">
             <h3 class="friends__title">Our friends who<br>are looking for a house</h3>
-            <div class="friends__slider">
+            <div id="slides" class="friends__slider">
                 <div class="friends__card">
                     <img src="img/pets-katrine.png" alt="" class="friends__image">
                     <p class="friends__text">Katrine</p>
@@ -91,6 +89,26 @@
                     <button class="friends__button button-secondary">Learn more</button>
                 </div>
             </div>
+
+            <!-- popup -->
+            <div id="popup" class="popup">
+                <div class="popup__wrapper">
+                    <div class="popup__image"><img src="img/pets-jennifer.png" alt=""></div>
+                    <div class="popup__info">
+                        <h2 class="popup__title"></h2>
+                        <h3 class="popup__subtitle"></h3>
+                        <p class="popup__text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                        <ul class="popup__list">
+                            <li class="popup__age">Age: <span>2 months</span></li>
+                            <li class="popup__inoculations">Inoculations: <span>none</span></li>
+                            <li class="popup__diseases">Diseases: <span>none</span></li>
+                            <li class="popup__parasites">Parasites: <span>none</span></li>
+                        </ul>
+                    </div>
+                    <button id="popup__close" class="popup__close">&times;</button>
+                </div>
+            </div>
+
             <nav class="friends__button-group">
                 <button class="button-paginator button-paginator_inactive">&#60;&#60;</button>
                 <button class="button-paginator button-paginator_inactive">&#60;</button>
@@ -131,8 +149,8 @@
             <img src="img/footer-puppy.png" alt="puppy" class="footer__image">
         </div>
     </footer>
-
-    <script src="js/index.js"></script>
     <script src="js/pets.js"></script>
+    <script src="js/popup-pets.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

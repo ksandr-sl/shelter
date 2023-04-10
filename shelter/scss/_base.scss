@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 
 h1, h2, h3, h4 {
@@ -16,22 +16,4 @@ a, p {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-}
-
-.blackout {
-    position: absolute;
-    top: -30px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 110vh;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-
-    &.visible {
-        display: block;
-        opacity: 1;
-    }
 }
