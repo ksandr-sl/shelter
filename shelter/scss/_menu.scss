@@ -84,32 +84,35 @@
     &__item::after {
         bottom: -10px;
     }
-    &__menu {
+    &__wrapper {
         position: absolute;
         top: -30px;
         right: 0;
         width: 320px;
         height: 100vh;
-        padding: 0 38px;
-        display: none;
-        opacity: 0;
-        background-color: #292929;
-        transform: translateX(320px);
-        transition: all 0.5s ease;
-        &._show {
-            transform: translateX(0);
-            opacity: 1;
-        }
+        overflow: hidden;
     }
-    &__wrapper {
-        width: 243px;
-        height: 327px;
-        margin: auto;
+    &__menu {
+        position: relative;
+        right: -320px;
+        width: 100%;
+        height: 100%;
+        padding: 0 38px;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        background-color: #292929;
+        opacity: 0;
+        transition: all 0.5s ease;
+
+        & .menu__link {
+            margin-bottom: 40px;
+        }
+        &._show {
+            right: 0;
+            opacity: 1;
+        }
     }
     & .link-active_lite {
         color: #FAFAFA;

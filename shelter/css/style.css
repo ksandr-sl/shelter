@@ -99,12 +99,14 @@ a, p {
   bottom: 0;
   left: 0;
   height: 110vh;
+  display: none;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 .blackout.visible {
+  display: block;
   opacity: 1;
 }
 
@@ -246,6 +248,9 @@ button {
 .header_lite .header__subtitle {
   color: #292929;
 }
+.header_lite .burger__wrapper {
+  top: 0;
+}
 
 @media (max-width: 320px) {
   .header__wrapper {
@@ -340,30 +345,20 @@ button {
 .burger__item::after {
   bottom: -10px;
 }
-.burger__menu {
+.burger__wrapper {
   position: absolute;
   top: -30px;
   right: 0;
   width: 320px;
   height: 100vh;
+  overflow: hidden;
+}
+.burger__menu {
+  position: relative;
+  right: -320px;
+  width: 100%;
+  height: 100%;
   padding: 0 38px;
-  display: none;
-  opacity: 0;
-  background-color: #292929;
-  -webkit-transform: translateX(320px);
-          transform: translateX(320px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.burger__menu._show {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-}
-.burger__wrapper {
-  width: 243px;
-  height: 327px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,13 +366,23 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #292929;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.burger__menu .menu__link {
+  margin-bottom: 40px;
+}
+.burger__menu._show {
+  right: 0;
+  opacity: 1;
 }
 .burger .link-active_lite {
   color: #FAFAFA;

@@ -45,6 +45,9 @@
     & .header__subtitle {
         color: #292929;
     }
+    & .burger__wrapper {
+        top: 0;
+    }
 }
 
 @media (max-width: 320px) {
